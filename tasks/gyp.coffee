@@ -34,7 +34,7 @@ module.exports = (grunt) ->
 
 		if options.arch then argv.push "--arch=#{options.arch}"
 
-		if options.directory then argv.ppush "--directory=#{options.directory}"
+		if options.directory then argv.push "--directory=#{options.directory}"
 		
 		gyp.parseArgv argv
 
